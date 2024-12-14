@@ -88,7 +88,7 @@ p {
   padding: 15px 30px;
   border-radius: 1px;
   border-color: yellow;
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   font-size: 22px;
   cursor: pointer;
 }
@@ -254,4 +254,16 @@ p {
   background-repeat: repeat-x;
   background-position: center;
   z-index: -1; /* Pushes behind content */
+}
+
+.ask-maxx-bttn {
+  padding: 15px 30px;
+  border-radius: 1px;
+  background-color: yellow;
+  color: darkorchid;
+  font-style: oblique;
+  border-color: darkmagenta;
+  /* color: hsl(0, 0%, 100%); */
+  font-size: 22px;
+  cursor: pointer;
 }
