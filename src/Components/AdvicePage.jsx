@@ -9,11 +9,14 @@ const AdvicePage = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const currentAdvice = maxxQuotes[currentIndex];
+  const [triggerAnimation, setTriggerAnimation] = useState(false); // New state to trigger animation
 
   const handleClick = () => {
-    const pickRandomIndex = Math.floor(Math.random() * maxxQuotes.length);
+    const pickRandomIndex = () => Math.floor(Math.random() * maxxQuotes.length); // Random index function
 
     setCurrentIndex(pickRandomIndex);
+    setTriggerAnimation((prev) => !prev); // Toggle the animation trigger
+    setTimeout(() => setTriggerAnimation(true), 50); // Delay before setting animation to true
 
     console.log(maxxQuotes);
   };
@@ -33,7 +36,15 @@ const AdvicePage = () => {
           </button>
           {maxxQuotes && (
             <>
-              (<p>{currentAdvice}</p>)
+              <div className="advice-container">
+                <div className="advice-img"></div>
+                <h6
+                  key={triggerAnimation ? currentAdvice : undefined} // Ensure key changes
+                  className={`advice-text ${triggerAnimation ? "animate" : ""}`} // Conditional class for animation
+                >
+                  {currentAdvice}
+                </h6>
+              </div>
             </>
           )}
         </div>
