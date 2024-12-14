@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+}
+
+.top-image {
+  height: 350px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("https://res.cloudinary.com/dvmczcg3f/image/upload/v1734136510/Codedex%2090s%20Themed%20Hackathon%20-%20Ask%20The%20Mask%20Assets/Screenshot_2024-12-13_at_5.57.19_PM_b84vsv.png");
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr; /* Side columns and a wider center */
+  min-height: 100vh;
+  gap: 0;
+}
+
+/* Side Column Wrappers */
+.side-column-wrapper {
+  /* position: relative; */
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.side-column {
+  flex: 1; /* Takes up equal width inside the side-column-wrapper */
+  height: 100%;
+  background-image: url("https://res.cloudinary.com/dvmczcg3f/image/upload/v1734136516/Codedex%2090s%20Themed%20Hackathon%20-%20Ask%20The%20Mask%20Assets/Screenshot_2024-12-13_at_6.30.46_PM_nkehzh.png");
+  /* background-repeat: repeat; */
+  background-size: cover;
+}
+
+.inner-side-column {
+  flex: 1; /* Takes up equal width inside the side-column-wrapper */
+  /* width: 50%; Inner column width relative to the side column */
+  height: 100%; /* Make it span the full height of the side column */
+  background-image: url("https://res.cloudinary.com/dvmczcg3f/image/upload/v1734136515/Codedex%2090s%20Themed%20Hackathon%20-%20Ask%20The%20Mask%20Assets/Screenshot_2024-12-13_at_6.09.33_PM_jqcc0y.png"); /* Your new image */
+  background-repeat: repeat-y;
+  /* background-size: cover; */
+  background-size: contain; /* Ensure the entire image fits within the column */
+
+  /* background-position: center; */
+  /* border: 2px solid #000; Optional: Add a border for a 90s vibe */
+}
+
+.other-side-column {
+  flex: 1;
+  height: 100%;
+  background-image: url("https://res.cloudinary.com/dvmczcg3f/image/upload/v1734136515/Codedex%2090s%20Themed%20Hackathon%20-%20Ask%20The%20Mask%20Assets/Screenshot_2024-12-13_at_6.16.43_PM_ehstqw.png");
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+
+.main-content {
+  background-color: black;
+  padding: 20px;
+  border: 5px solid #000;
+  /* box-shadow: 5px 5px 0px #888; */
+  /* text-align: center; */
+  color: white;
+  margin: 0;
+}
+
+.img1 {
+  background-repeat: space;
+}
