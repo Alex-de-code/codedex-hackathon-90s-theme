@@ -10,7 +10,7 @@ function App() {
           <div className="inner-side-column"></div>
         </div>
 
-        <div className="main-content">
+        <div className="main-content" style={{ paddingBottom: "75px" }}>
           <div className="top-image"></div>
           <div
             style={{
@@ -96,6 +96,7 @@ function App() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
+                marginTop: "75px",
               }}
             >
               <img
@@ -119,11 +120,11 @@ function App() {
           <div className="other-side-column"></div>
         </div>
       </div>
-      <img
+      {/* <img
         src="https://res.cloudinary.com/dvmczcg3f/image/upload/v1734142018/Codedex%2090s%20Themed%20Hackathon%20-%20Ask%20The%20Mask%20Assets/ICONE_EN_CONSTRUCTION_m1rik4.gif"
         alt="under construction"
         style={{ width: "100%", height: "auto" }}
-      />
+      /> */}
     </>
   );
 }
