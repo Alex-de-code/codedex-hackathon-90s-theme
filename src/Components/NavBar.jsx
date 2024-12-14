@@ -11,6 +11,9 @@ const NavBar = () => {
             style={{ width: "150px", height: "100%" }}
           />
         </Link>
+        <Link to="/advice">
+          <p>Advice</p>
+        </Link>
         {/* remember to link to page that explains the project's meaning */}
         <Link to="/info">
           <img

@@ -1,6 +1,13 @@
 import "../App.css";
+import { useNavigate } from "react-router-dom";
 
 const LandingPage = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/advice");
+  };
+
   return (
     <>
       <div className="wrapper">
@@ -104,7 +111,9 @@ const LandingPage = () => {
                 alt="arrow-pointing-left"
                 style={{ marginRight: "10px", transform: "scaleX(-1)" }}
               />
-              <button className="advice-bttn">Get Maxx's Advice</button>
+              <button onClick={handleClick} className="advice-bttn">
+                Get Maxx's Advice
+              </button>
               <img
                 src="https://res.cloudinary.com/dvmczcg3f/image/upload/v1734143337/Codedex%2090s%20Themed%20Hackathon%20-%20Ask%20The%20Mask%20Assets/arrow1_ldanh8.gif"
                 alt="arrow-pointing-left"
