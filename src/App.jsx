@@ -12,10 +12,30 @@ function App() {
 
         <div className="main-content">
           <div className="top-image"></div>
-          <h1>
-            Welcome to <span style={{ color: "yellow" }}>Ask</span>{" "}
-            <span>The</span> <span style={{ color: "darkorchid" }}>Maxx</span>
-          </h1>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <img
+              src="https://res.cloudinary.com/dvmczcg3f/image/upload/v1734142886/Codedex%2090s%20Themed%20Hackathon%20-%20Ask%20The%20Mask%20Assets/brain_silfoi.gif"
+              alt="brain-pulsing"
+              // style={{ marginRight: "10px" }} // Add space between the GIF and the text
+            />
+
+            <h1 style={{ textAlign: "center" }}>
+              Welcome to <span style={{ color: "yellow" }}>Ask</span>{" "}
+              <span>The</span> <span style={{ color: "darkorchid" }}>Maxx</span>
+            </h1>
+            <img
+              src="https://res.cloudinary.com/dvmczcg3f/image/upload/v1734142886/Codedex%2090s%20Themed%20Hackathon%20-%20Ask%20The%20Mask%20Assets/brain_silfoi.gif"
+              alt="brain-pulsing"
+              // style={{ marginLeft: "10px" }} // Add space between the text and the GIF
+            />
+          </div>
+
           <div>
             <p>
               Oh... hey. Didn't see you there. Welcome to{" "}
@@ -71,7 +91,25 @@ function App() {
 
             <p>You are. So... ask away. I'm waiting.</p>
 
-            <button>Get Maxx's Advice</button>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <img
+                src="https://res.cloudinary.com/dvmczcg3f/image/upload/v1734143337/Codedex%2090s%20Themed%20Hackathon%20-%20Ask%20The%20Mask%20Assets/arrow1_ldanh8.gif"
+                alt="arrow-pointing-left"
+                style={{ marginRight: "10px", transform: "scaleX(-1)" }}
+              />
+              <button>Get Maxx's Advice</button>
+              <img
+                src="https://res.cloudinary.com/dvmczcg3f/image/upload/v1734143337/Codedex%2090s%20Themed%20Hackathon%20-%20Ask%20The%20Mask%20Assets/arrow1_ldanh8.gif"
+                alt="arrow-pointing-left"
+                style={{ marginLeft: "10px" }}
+              />
+            </div>
           </div>
         </div>
 
@@ -81,6 +119,11 @@ function App() {
           <div className="other-side-column"></div>
         </div>
       </div>
+      <img
+        src="https://res.cloudinary.com/dvmczcg3f/image/upload/v1734142018/Codedex%2090s%20Themed%20Hackathon%20-%20Ask%20The%20Mask%20Assets/ICONE_EN_CONSTRUCTION_m1rik4.gif"
+        alt="under construction"
+        style={{ width: "100%", height: "auto" }}
+      />
     </>
   );
 }
