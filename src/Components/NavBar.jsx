@@ -10,7 +10,7 @@ const NavBar = () => {
           />
         </a>
         {/* remember to link to page that explains the project's meaning */}
-        <a href="/">
+        <a href="/info">
           <img
             src="https://res.cloudinary.com/dvmczcg3f/image/upload/v1734148287/Codedex%2090s%20Themed%20Hackathon%20-%20Ask%20The%20Mask%20Assets/info-gif_t7q9ga.gif"
             alt="info-gif"
