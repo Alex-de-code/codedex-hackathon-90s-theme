@@ -76,6 +76,17 @@ p {
   margin: 0;
 }
 
+.advice-bttn {
+  background-image: linear-gradient(to left, purple, darkorchid);
+  background-size: 200% auto;
+  padding: 15px 30px;
+  border-radius: 1px;
+  border-color: yellow;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
 .img1 {
   background-repeat: space;
 }
