@@ -35,13 +35,16 @@ const NavBar = () => {
           />
         </Link>
         {/* Remember to link to email/contact info */}
-        <Link to="/">
+        <a
+          href="https://www.linkedin.com/in/alexander-gonzalez-can-code/"
+          target="_blank"
+        >
           <img
             src="https://res.cloudinary.com/dvmczcg3f/image/upload/v1734147688/Codedex%2090s%20Themed%20Hackathon%20-%20Ask%20The%20Mask%20Assets/email3-gif_ej7qfp.gif"
             alt="email"
             style={{ width: "350px", height: "100%" }}
           />
-        </Link>
+        </a>
       </div>
     </>
   );
