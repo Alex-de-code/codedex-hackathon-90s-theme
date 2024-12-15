@@ -3,6 +3,18 @@ import { Link } from "react-router";
 const NavBar = () => {
   return (
     <>
+      <div
+        style={{
+          backgroundImage:
+            "url(https://res.cloudinary.com/dvmczcg3f/image/upload/v1734136514/Codedex%2090s%20Themed%20Hackathon%20-%20Ask%20The%20Mask%20Assets/Screenshot_2024-12-13_at_6.00.02_PM_bjovmu.png)",
+          width: "100%",
+          height: "20px",
+          backgroundSize: "contain",
+          // backgroundRepeat: "repeat-x",
+          backgroundPosition: "",
+          // display: "flex",
+        }}
+      />
       <div className="navbar">
         <Link to="/">
           <img

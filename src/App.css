@@ -17,6 +17,9 @@ p {
 .navbar {
   /* padding-top: 30px;
   padding-bottom: 30px; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   padding-inline: 0px;
   background-color: #000;
 }
@@ -259,22 +262,23 @@ p {
 .advice-page-wrapper {
   /* Centers content horizontally and vertically */
   display: flex;
+  min-height: 90vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
   /* Sets page width and spacing */
   width: 100%;
+  /* height: 100%; */
   /* max-width: 1200px; */
   margin: 0 auto;
   /* padding: 20px; */
-  padding-inline: 20px;
+  /* padding-inline: 20px; */
 
   /* Background and styling */
-  background-color: black; /* Light background for contrast */
+  /* background-color: black; Light background for contrast */
   /* border-radius: 8px; Rounded corners */
   color: white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 
   /* Responsive adjustments */
   box-sizing: border-box;
@@ -283,12 +287,13 @@ p {
 .ask-maxx-bttn {
   padding: 15px 30px;
   border-radius: 1px;
-  background-color: yellow;
+  width: 100%;
+  background-color: rgb(230, 164, 32);
   color: darkorchid;
   font-style: oblique;
   border-color: darkmagenta;
-  /* color: hsl(0, 0%, 100%); */
-  font-size: 22px;
+  font-size: 28px;
+  font-weight: bolder;
   cursor: pointer;
 }
 
@@ -298,11 +303,13 @@ p {
   justify-content: flex-start;
   align-items: center;
   /* background-color: #333; Dark background for card effect */
-  background-color: #000;
+  /* background-color: #290a31; */
+  margin-top: 10%;
+  margin-bottom: 10%;
   /* border-radius: 15px; */
   width: 80%; /* Adjust the width of the entire container */
-  margin: 20px auto;
-  padding: 20px;
+  /* margin: 20px auto; */
+  /* padding: 20px; */
   /* box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); */
   position: relative;
 }
@@ -314,8 +321,8 @@ p {
   /* background-size: contain; */
   background-repeat: no-repeat;
   background-image: url("https://res.cloudinary.com/dvmczcg3f/image/upload/b_rgb:FFFFFF/c_crop,ar_1:1/v1734136514/Codedex%2090s%20Themed%20Hackathon%20-%20Ask%20The%20Mask%20Assets/Screenshot_2024-12-13_at_6.00.02_PM_bjovmu.png");
-  background-color: lightgray; /* Optional: Add background color to see the div */
-  align-self: flex-start; /* Prevents flexbox from resizing the image */
+  /* background-color: lightgray; Optional: Add background color to see the div */
+  /* align-self: flex-start; Prevents flexbox from resizing the image */
 
   /* border-radius: 20px; */
 }
@@ -328,7 +335,7 @@ p {
   max-width: 600px;
   white-space: pre-wrap;
   overflow: hidden;
-  padding-left: 10px; /* Space for the 'prompt' effect */
+  padding-left: 40px; /* Space for the 'prompt' effect */
   display: flex; /* Keeps the text inline */
   width: 100%;
   opacity: 0; /* Initially hide text */

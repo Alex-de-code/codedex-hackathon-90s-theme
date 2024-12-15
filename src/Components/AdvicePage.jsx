@@ -36,17 +36,31 @@ const AdvicePage = () => {
 
   return (
     <>
-      <div style={{ backgroundColor: "black" }}>
-        <h1>Advice Page</h1>
+      <div
+        style={{
+          backgroundColor: "black",
+          // backgroundImage:
+          //   "url(https://res.cloudinary.com/dvmczcg3f/image/upload/v1734136524/Codedex%2090s%20Themed%20Hackathon%20-%20Ask%20The%20Mask%20Assets/Screenshot_2024-12-13_at_7.18.24_PM_v0h9j0.png)",
+          // width: "100%",
+          // height: "50px",
+          // backgroundSize: "contain",
+          // backgroundRepeat: "repeat",
+        }}
+      >
         <div className="advice-page-wrapper">
-          <p>Well you made it this far... come on, pick my brain.</p>
-          <button onClick={handleClick} className="ask-maxx-bttn">
-            Ask The Maxx
-          </button>
           {maxxQuotes && (
             <>
               <div className="advice-container">
-                <div className="advice-img"></div>
+                <div style={{ background: "#290a31", padding: "20px" }}>
+                  <div className="advice-img"></div>
+                  <button
+                    onClick={handleClick}
+                    className="ask-maxx-bttn"
+                    style={{ marginTop: "20px" }}
+                  >
+                    Ask The Maxx
+                  </button>
+                </div>
                 <h6
                   key={triggerAnimation ? currentAdvice : undefined} // Ensure key changes
                   className={`advice-text ${triggerAnimation ? "animate" : ""}`} // Conditional class for animation
