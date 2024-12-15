@@ -88,7 +88,7 @@ const LandingPage = () => {
               ready...
               <br />
               <br />
-              <strong style={{ color: "dodgerblue" }}>Click the button.</strong>
+              <strong style={{ color: "crimson" }}>Click the button.</strong>
             </p>
 
             <p>

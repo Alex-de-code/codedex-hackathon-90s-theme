@@ -13,7 +13,6 @@ const AdvicePage = () => {
     "She helped people by controlling them, hoping to smother her own pain. And, somewhere in the wild land, in the land of dreams, in Pangaea, her inner-self was imprisoned by her own self-loathing.",
     "OUCHIE.",
     "She helped by controlling them...hoping to smother her own pain...something like that.",
-    "",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
