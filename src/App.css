@@ -256,6 +256,30 @@ p {
   z-index: -1; /* Pushes behind content */
 }
 
+.advice-page-wrapper {
+  /* Centers content horizontally and vertically */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* Sets page width and spacing */
+  width: 100%;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  /* padding: 20px; */
+  padding-inline: 20px;
+
+  /* Background and styling */
+  background-color: black; /* Light background for contrast */
+  /* border-radius: 8px; Rounded corners */
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
+  /* Responsive adjustments */
+  box-sizing: border-box;
+}
+
 .ask-maxx-bttn {
   padding: 15px 30px;
   border-radius: 1px;
@@ -302,10 +326,10 @@ p {
   color: #fff; /* White text for better contrast */
   line-height: 1.4;
   max-width: 600px;
-  white-space: nowrap;
+  white-space: pre-wrap;
   overflow: hidden;
   padding-left: 10px; /* Space for the 'prompt' effect */
-  display: inline-block; /* Keeps the text inline */
+  display: flex; /* Keeps the text inline */
   width: 100%;
   opacity: 0; /* Initially hide text */
   /* border-left: 4px solid #fff; The 'prompt' border on the left */
@@ -325,12 +349,6 @@ p {
 }
 
 .animate {
-  animation: typing 5s steps(40) 1s forwards, blink 0.75s step-end infinite;
-}
-
-/* Blinking cursor animation */
-@keyframes blink {
-  50% {
-    border-color: transparent; /* Makes the cursor invisible at half of the animation */
-  }
+  animation: typing 5s steps(40) 1s forwards;
+  /* animation: typing 5s steps(40) 1s forwards, blink 0.75s step-end  infinite; */
 }
